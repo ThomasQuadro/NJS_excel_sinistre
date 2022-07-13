@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Excel to JSON | Javacodepoint</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/xlsx/dist/xlsx.full.min.js"></script> 
+  </head>
+  <body style="margin: 0;padding:0;">
+    <h1>Upload an excel file to convert into JSON</h1>
+    <input type="file" id="file_upload" />
+    <button id="upload">Upload</button>  
+    <button id="download">Download</button>
+    <br>
+    <br>
+    <!-- container to display the json result -->
+    <div class="resultat" style="display: flex;width: 100%;justify-content: space-evenly;">
+      <div class="group" style="display: flex;flex-direction:column;width: 40%;">
+        <h3 style="display: none;">FICHIER IMPORTER</h3>
+        <textarea id="json-result" style="display:none;height:500px;width:350px;"></textarea>
+      </div>
+      <div class="group" style="display: flex;flex-direction:column;width: 40%;">
+        <h3 style="display: none;">FICHIER TRAITER</h3>
+        <textarea id="json-result2" style="display:none;height:500px;width:350px;"></textarea>
+      </div>
+    </div>
+  <script src="commun/excel.js"></script>
+  </body>
+</html>
